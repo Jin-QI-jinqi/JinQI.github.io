@@ -3,44 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Personal Introduction - Jin QI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
             padding: 20px;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .header, .content {
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+        .header {
+            padding: 20px 0;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .content p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <h2>About</h2>
-        <p>This is a simple HTML page created as an example.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 My Website</p>
-    </footer>
+    <div class="container">
+        <div class="header">
+            <h1>Personal Introduction</h1>
+        </div>
+        <div class="content">
+            <img src="images/Picture1.jpg" alt="Profile Photo" class="profile-pic">
+            <h2>Jin QI</h2>
+            <p><strong>Associate Director of Center for Aging Science</strong></p>
+            <p><strong>UG Programs Coordinator (Industrial Engineering and Decisions Analytics)</strong></p>
+            <p><strong>Associate Professor of the Department of Industrial Engineering and Decision Analytics</strong></p>
+            <p><strong>Hong Kong University of Science and Technology</strong></p>
+            <p>I serve as the Associate Director of the Center for Aging Science, the UG Programs Coordinator, and an Associate Professor in the Department of Industrial Engineering and Decision Analytics. Prior to my role at the Hong Kong University of Science and Technology, I was a visiting Assistant Professor in the Department of Management Sciences. I earned my PhD from the NUS Business School at the National University of Singapore.</p>
+            <p>My research interests include healthcare operations, robust optimization, transportation, and target-based decision-making. I aim to advance the development of theories in these relevant fields and provide support for practical applications. Through using some data modeling, data analytics, and other methods, try to improve the scientificity and efficiency of decisions and help solve complicated questions in the real world.</p>
+            <h3>Contact Information:</h3>
+            <p>Tel: 23588238</p>
+            <p>Email: jinqi@ust.hk</p>
+            <p>Office: Room 5592, Hong Kong University of Science and Technology</p>
+            <h3>Research Interests:</h3>
+            <p>Healthcare operations</p>
+            <p>Robust optimization</p>
+            <p>Transportation</p>
+            <p>Target-based decision-making</p>
+            <p>I have received the CSASME Best Paper Award, MSOM Best Operations Management Paper in Operations Research, and POMS-HK Best Student Paper Competition. I have received grants from HKUST and other professional organizations. My students have also made great achievements in academia.</p>
+        </div>
+    </div>
 </body>
 </html>
