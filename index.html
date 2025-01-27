@@ -15,8 +15,14 @@
             background-position: center; /* 背景图片居中 */
             background-repeat: no-repeat; /* 背景图片不重复 */
             color: #333;
+            display: flex; /* 使用 flexbox 布局 */
+            justify-content: center; /* 水平居中对齐 */
+            align-items: center; /* 垂直居中对齐 */
+            height: 100vh; /* 视口高度 */
         }
         .container {
+            display: flex; /* 使用 flexbox 布局 */
+            flex-direction: row; /* 水平排列子元素 */
             width: 80%;
             margin: auto;
             overflow: hidden;
@@ -30,13 +36,15 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 20px;
+            margin-right: 20px; /* 添加右边距 */
+        }
+        .content {
+            display: flex; /* 使用 flexbox 布局 */
+            flex-direction: column; /* 垂直排列子元素 */
+            justify-content: center; /* 垂直居中对齐 */
         }
         .header, .content {
-            text-align: center;
-        }
-        .header {
-            padding: 20px 0;
+            text-align: left; /* 左对齐 */
         }
         .content h2 {
             margin-top: 0;
@@ -48,11 +56,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Personal Introduction</h1>
-        </div>
+        <img src="images/Picture1.jpg" alt="Profile Photo" class="profile-pic">
         <div class="content">
-            <img src="images/Picture1.jpg" alt="Profile Photo" class="profile-pic">
+            <div class="header">
+                <h1>Personal Introduction</h1>
+            </div>
             <h2>Jin QI</h2>
             <p><strong>Associate Director of Center for Aging Science</strong></p>
             <p><strong>UG Programs Coordinator (Industrial Engineering and Decisions Analytics)</strong></p>
