@@ -10,7 +10,10 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-image: url('images/background.jpg'); /* 设置背景图片 */
+            background-size: cover; /* 背景图片覆盖整个页面 */
+            background-position: center; /* 背景图片居中 */
+            background-repeat: no-repeat; /* 背景图片不重复 */
             color: #333;
         }
         .container {
@@ -18,6 +21,9 @@
             margin: auto;
             overflow: hidden;
             padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* 设置内容背景为半透明 */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .profile-pic {
             width: 150px;
@@ -31,13 +37,6 @@
         }
         .header {
             padding: 20px 0;
-        }
-        .content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
         }
         .content h2 {
             margin-top: 0;
