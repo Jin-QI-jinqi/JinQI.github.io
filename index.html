@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Introduction - Jin QI</title>
+    <title>Personal Website - Jin QI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,13 +16,31 @@
             background-repeat: no-repeat; /* 背景图片不重复 */
             color: #333;
             display: flex; /* 使用 flexbox 布局 */
-            justify-content: center; /* 水平居中对齐 */
-            align-items: center; /* 垂直居中对齐 */
+            flex-direction: column;
+            align-items: center;
             min-height: 100vh; /* 视口高度 */
         }
+        .nav {
+            width: 100%;
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000; /* 确保导航栏在最前面 */
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: #444;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background: #555;
+        }
         .container {
-            display: flex; /* 使用 flexbox 布局 */
-            flex-direction: row; /* 水平排列子元素 */
             width: 80%;
             margin: auto;
             overflow: hidden;
@@ -30,54 +48,64 @@
             background: rgba(255, 255, 255, 0.8); /* 设置内容背景为半透明 */
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 80px; /* 确保内容不被导航栏遮挡 */
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 20px; /* 添加右边距 */
-        }
-        .content {
-            display: flex; /* 使用 flexbox 布局 */
-            flex-direction: column; /* 垂直排列子元素 */
-            justify-content: center; /* 垂直居中对齐 */
-        }
-        .header, .content {
-            text-align: left; /* 左对齐 */
-        }
-        .content h2 {
-            margin-top: 0;
-        }
-        .content p {
-            margin: 10px 0;
+        .section {
+            padding: 50px 0;
+            margin: 50px 0;
+            border: 1px solid #ddd;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <div class="nav">
+        <a href="#personal-info">Personal Information</a>
+        <a href="#academic-background">Academic Background</a>
+        <a href="#research-info">Research Information</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#awards-honors">Awards and Honors</a>
+        <a href="#projects-grants">Research Projects Grants</a>
+        <a href="#research-group">Research Group</a>
+    </div>
+    
     <div class="container">
-        <img src="images/Picture1.jpg" alt="Profile Photo" class="profile-pic">
-        <div class="content">
-            <div class="header">
-                <h1>Personal Introduction</h1>
-            </div>
-            <h2>Jin QI</h2>
-            <p><strong>Associate Director of Center for Aging Science</strong></p>
-            <p><strong>UG Programs Coordinator (Industrial Engineering and Decisions Analytics)</strong></p>
-            <p><strong>Associate Professor of the Department of Industrial Engineering and Decision Analytics</strong></p>
-            <p><strong>Hong Kong University of Science and Technology</strong></p>
+        <div id="personal-info" class="section">
+            <h2>Personal Information</h2>
+            <p>Jin QI</p>
+            <p>Associate Director of Center for Aging Science</p>
+            <p>UG Programs Coordinator (Industrial Engineering and Decisions Analytics)</p>        
+            <p>Associate Professor of the Department of Industrial Engineering and Decision Analytics</p>                          
+            <p>Hong Kong University of Science and Technology</p>
+        </div>
+        <div id="academic-background" class="section">
+            <h2>Academic Background</h2>
             <p>I serve as the Associate Director of the Center for Aging Science, the UG Programs Coordinator, and an Associate Professor in the Department of Industrial Engineering and Decision Analytics. Prior to my role at the Hong Kong University of Science and Technology, I was a visiting Assistant Professor in the Department of Management Sciences. I earned my PhD from the NUS Business School at the National University of Singapore.</p>
+        </div>
+        <div id="research-info" class="section">
+            <h2>Research Information</h2>
             <p>My research interests include healthcare operations, robust optimization, transportation, and target-based decision-making. I aim to advance the development of theories in these relevant fields and provide support for practical applications. Through using some data modeling, data analytics, and other methods, try to improve the scientificity and efficiency of decisions and help solve complicated questions in the real world.</p>
-            <h3>Contact Information:</h3>
-            <p>Tel: 23588238</p>
-            <p>Email: jinqi@ust.hk</p>
-            <p>Office: Room 5592, Hong Kong University of Science and Technology</p>
-            <h3>Research Interests:</h3>
-            <p>Healthcare operations</p>
-            <p>Robust optimization</p>
-            <p>Transportation</p>
-            <p>Target-based decision-making</p>
-            <p>I have received the CSASME Best Paper Award, MSOM Best Operations Management Paper in Operations Research, and POMS-HK Best Student Paper Competition. I have received grants from HKUST and other professional organizations. My students have also made great achievements in academia.</p>
+        </div>
+        <div id="publications" class="section">
+            <h2>Publications</h2>
+            <p>This section is currently empty.</p>
+        </div>
+        <div id="teaching" class="section">
+            <h2>Teaching</h2>
+            <p>This section is currently empty.</p>
+        </div>
+        <div id="awards-honors" class="section">
+            <h2>Awards and Honors</h2>
+            <p>This section is currently empty.</p>
+        </div>
+        <div id="projects-grants" class="section">
+            <h2>Research Projects Grants</h2>
+            <p>This section is currently empty.</p>
+        </div>
+        <div id="research-group" class="section">
+            <h2>Research Group</h2>
+            <p>This section is currently empty.</p>
         </div>
     </div>
 </body>
